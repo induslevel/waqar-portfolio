@@ -1,10 +1,14 @@
 import React from "react";
+import { Briefcase } from "lucide-react";
 
 export function Experience() {
   return (
     <section id="experience" className="py-20 bg-white dark:bg-black text-black dark:text-white">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center">Professional Journey</h2>
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex items-center gap-3 mb-16 justify-center">
+          <Briefcase className="w-10 h-10 text-blue-500" />
+          <h2 className="text-3xl md:text-5xl font-bold text-center">Professional Journey</h2>
+        </div>
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div key={index} className="relative pl-8 border-l border-neutral-200 dark:border-neutral-800 pb-12 last:pb-0">

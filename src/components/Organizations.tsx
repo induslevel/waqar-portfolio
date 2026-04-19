@@ -6,11 +6,11 @@ export function Organizations() {
     <section id="organizations" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-12 justify-center">
-          <Users className="w-8 h-8 text-blue-500" />
+          <Users className="w-10 h-10 text-blue-500" />
           <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white text-center">Fellowships & Organizations</h2>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
           {orgs.map((org, index) => (
             <a 
               key={index} 

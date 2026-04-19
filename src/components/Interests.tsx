@@ -1,13 +1,15 @@
-import React from "react";
-import { Camera, BookOpen } from "lucide-react";
+import { Camera, BookOpen, Palette } from "lucide-react";
 
 export function Interests() {
   return (
     <section id="interests" className="py-20 bg-neutral-50 dark:bg-neutral-900/30">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white mb-16 text-center">Creative Portfolios</h2>
+        <div className="flex items-center gap-3 mb-16 justify-center">
+          <Palette className="w-10 h-10 text-blue-500" />
+          <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white text-center">Creative Portfolios</h2>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {portfolios.map((item, index) => (
             <a 
               key={index} 

@@ -3,7 +3,7 @@ import { Award, BookOpen, MoveUpRight, Globe, Cloud, Terminal, Monitor, LayoutGr
 export function Credentials() {
   return (
     <section id="credentials" className="py-20 bg-neutral-50 dark:bg-neutral-900/30">
-      <div className="max-w-4xl mx-auto px-4 flex flex-col space-y-20">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col space-y-20">
         {/* Certifications Section */}
         <div id="certifications">
           <div className="flex items-center gap-3 mb-10 justify-center">
@@ -45,7 +45,7 @@ export function Credentials() {
             <BookOpen className="w-10 h-10 text-blue-500" />
             <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white">Education</h2>
           </div>
-          <a href="https://www.uet.edu.pk/" target="_blank" rel="noopener noreferrer" className="bg-white dark:bg-black/50 border border-neutral-200 dark:border-neutral-800 p-8 rounded-3xl block hover:border-blue-500/30 transition-all group shadow-sm hover:shadow-lg max-w-2xl mx-auto">
+          <a href="https://www.uet.edu.pk/" target="_blank" rel="noopener noreferrer" className="bg-white dark:bg-black/50 border border-neutral-200 dark:border-neutral-800 p-8 rounded-3xl block hover:border-blue-500/30 transition-all group shadow-sm hover:shadow-lg w-full">
             <h3 className="text-2xl font-bold text-black dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Bachelor of Electrical Engineering</h3>
             <p className="text-blue-600 dark:text-blue-400 font-medium text-lg mt-1">University of Engineering and Technology, Lahore</p>
             <p className="text-neutral-500 dark:text-neutral-500 text-sm mt-2 font-mono">July 2005 – July 2009</p>

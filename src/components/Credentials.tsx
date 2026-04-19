@@ -6,9 +6,9 @@ export function Credentials() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col space-y-20">
         {/* Certifications Section */}
         <div id="certifications">
-          <div className="flex items-center gap-3 mb-10 justify-center">
+          <div className="flex items-center gap-3 mb-10 justify-start">
             <Award className="w-10 h-10 text-blue-500" />
-            <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white">Certifications</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white text-left">Certifications</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {certifications.map((cert, index) => (
@@ -41,9 +41,9 @@ export function Credentials() {
 
         {/* Education Section */}
         <div id="education">
-          <div className="flex items-center gap-3 mb-10 justify-center">
+          <div className="flex items-center gap-3 mb-10 justify-start">
             <BookOpen className="w-10 h-10 text-blue-500" />
-            <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white">Education</h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white text-left">Education</h2>
           </div>
           <a href="https://www.uet.edu.pk/" target="_blank" rel="noopener noreferrer" className="bg-white dark:bg-black/50 border border-neutral-200 dark:border-neutral-800 p-8 rounded-3xl block hover:border-blue-500/30 transition-all group shadow-sm hover:shadow-lg w-full">
             <h3 className="text-2xl font-bold text-black dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Bachelor of Electrical Engineering</h3>

@@ -20,9 +20,9 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 bg-neutral-50 dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-left mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-4">Projects</h2>
-          <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+          <p className="text-neutral-600 dark:text-neutral-400 max-w-2xl">
             I'm a results-driven Systems Architect dedicated to designing and scaling highly available hybrid cloud infrastructures. 
             I love architecting robust solutions.
           </p>

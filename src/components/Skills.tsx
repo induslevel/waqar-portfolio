@@ -21,9 +21,9 @@ export function Skills() {
   return (
     <section id="arsenal" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center gap-3 mb-12 justify-center">
+        <div className="flex items-center gap-3 mb-12 justify-start">
           <Cpu className="w-10 h-10 text-blue-500" />
-          <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white text-center">Technical Arsenal</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white text-left">Technical Arsenal</h2>
         </div>
         <BentoGrid className="max-w-7xl mx-auto">
           {items.map((item, i) => (

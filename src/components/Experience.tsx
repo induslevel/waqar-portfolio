@@ -5,9 +5,9 @@ export function Experience() {
   return (
     <section id="experience" className="py-20 bg-white dark:bg-black text-black dark:text-white">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center gap-3 mb-16 justify-center">
+        <div className="flex items-center gap-3 mb-16 justify-start">
           <Briefcase className="w-10 h-10 text-blue-500" />
-          <h2 className="text-3xl md:text-5xl font-bold text-center">Professional Journey</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-left">Professional Journey</h2>
         </div>
         <div className="space-y-12">
           {experiences.map((exp, index) => (

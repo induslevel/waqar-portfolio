@@ -48,6 +48,7 @@ export function Contact() {
               required
               className="w-full bg-black border border-neutral-800 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500"
             ></textarea>
+            <div className="h-captcha" data-captcha="true"></div>
             <button 
               type="submit" 
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors"

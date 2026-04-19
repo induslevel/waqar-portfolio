@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${inter.className} bg-black text-white antialiased`}>
         {children}
+        <script src="https://web3forms.com/client/script.js" async defer></script>
       </body>
     </html>
   );

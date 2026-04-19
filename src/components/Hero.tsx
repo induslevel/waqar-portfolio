@@ -23,12 +23,12 @@ export function Hero() {
           <a href="https://induslevel.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-800 px-3 py-1 rounded-full hover:border-blue-500 hover:text-blue-400 transition-colors">Website: induslevel.com</a>
         </div>
         <div className="mt-8 flex justify-center gap-4">
-          <button className="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-neutral-200 transition-colors flex items-center gap-2">
+          <a href="#projects" className="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-neutral-200 transition-colors flex items-center gap-2">
             View Projects <MoveRight className="w-4 h-4" />
-          </button>
-          <button className="px-8 py-3 rounded-full border border-white text-white font-bold hover:bg-white/10 transition-colors">
+          </a>
+          <a href="#contact" className="px-8 py-3 rounded-full border border-white text-white font-bold hover:bg-white/10 transition-colors">
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { MessageCircle, Mail, MapPin, Send } from "lucide-react";
 
 export function Contact() {
   return (
-    <footer className="py-20 bg-black border-t border-neutral-900">
+    <footer id="contact" className="py-20 bg-black border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
           <h2 className="text-3xl font-bold text-white mb-6">Get in Touch</h2>

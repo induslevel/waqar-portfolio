@@ -7,7 +7,14 @@ import {
   Terminal, 
   Network, 
   Activity, 
-  LayoutDashboard 
+  LayoutDashboard,
+  Server,
+  Database,
+  Lock,
+  Workflow,
+  Globe,
+  Settings,
+  Monitor
 } from "lucide-react";
 
 export function Skills() {
@@ -20,7 +27,19 @@ export function Skills() {
             <BentoGridItem
               key={i}
               title={item.title}
-              description={item.description}
+              description={
+                <div className="space-y-4 mt-2">
+                  <p className="text-neutral-400 text-xs leading-relaxed">{item.descriptionText}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {item.tools.map((tool, idx) => (
+                      <div key={idx} className="flex items-center gap-1.5 px-2 py-1 bg-white/5 border border-white/10 rounded-md">
+                        {tool.icon}
+                        <span className="text-[10px] text-neutral-300 whitespace-nowrap">{tool.name}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              }
               header={
                 <div className={`flex flex-1 w-full h-full min-h-[8rem] rounded-xl bg-gradient-to-br ${item.gradient} flex items-center justify-center group-hover/bento:scale-105 transition-transform duration-300`}>
                   {item.headerIcon}
@@ -38,50 +57,85 @@ export function Skills() {
 const items = [
   {
     title: "Cloud Platforms",
-    description: (
-      <>
-        <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Google Cloud Platform (GCP)</a>,{" "}
-        <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Amazon Web Services (AWS)</a>,{" "}
-        <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Microsoft Azure</a>.
-      </>
-    ),
+    descriptionText: "Designing multi-cloud infrastructures with global VPCs and edge performance.",
     gradient: "from-blue-500/20 to-cyan-500/20",
     headerIcon: <Cloud className="h-12 w-12 text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" />,
+    tools: [
+      { name: "GCP", icon: <Globe className="w-3 h-3 text-blue-400" /> },
+      { name: "AWS", icon: <Cloud className="w-3 h-3 text-orange-400" /> },
+      { name: "Azure", icon: <Server className="w-3 h-3 text-blue-500" /> }
+    ]
   },
   {
     title: "Virtualization & Containers",
-    description: "Docker, Kubernetes (k8s), VMware vSphere, RedHat KVM, Citrix Xen, Oracle VM.",
+    descriptionText: "Enterprise virtualization and container orchestration for scalable microservices.",
     gradient: "from-purple-500/20 to-pink-500/20",
     headerIcon: <Cpu className="h-12 w-12 text-pink-400 drop-shadow-[0_0_15px_rgba(244,114,182,0.5)]" />,
+    tools: [
+      { name: "Kubernetes", icon: <Settings className="w-3 h-3 text-blue-400" /> },
+      { name: "Docker", icon: <Box className="w-3 h-3 text-cyan-400" /> },
+      { name: "VMware", icon: <Monitor className="w-3 h-3 text-blue-300" /> },
+      { name: "Citrix", icon: <Server className="w-3 h-3 text-neutral-400" /> }
+    ]
   },
   {
     title: "Automation & CI/CD",
-    description: "Bash, Ansible, Puppet, RedHat Satellite, Jenkins, SVN, GIT.",
+    descriptionText: "Infrastructure-as-code and automated delivery pipelines for rapid deployment.",
     gradient: "from-emerald-500/20 to-teal-500/20",
     headerIcon: <Terminal className="h-12 w-12 text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)]" />,
+    tools: [
+      { name: "Ansible", icon: <Workflow className="w-3 h-3 text-red-400" /> },
+      { name: "Jenkins", icon: <Settings className="w-3 h-3 text-neutral-300" /> },
+      { name: "Puppet", icon: <Settings className="w-3 h-3 text-yellow-400" /> },
+      { name: "Git", icon: <Workflow className="w-3 h-3 text-orange-600" /> }
+    ]
   },
   {
     title: "Networking & Security",
-    description: "PfSense, IPSec/SSL VPN, F5 LTM, AWS Route53, Cloudflare CDN/DDoS Protection.",
+    descriptionText: "Securing OLTP platforms and maintaining multi-region connectivity and DDoS protection.",
     gradient: "from-red-500/20 to-orange-500/20",
     headerIcon: <ShieldCheck className="h-12 w-12 text-red-400 drop-shadow-[0_0_15px_rgba(248,113,113,0.5)]" />,
+    tools: [
+      { name: "PfSense", icon: <ShieldCheck className="w-3 h-3 text-emerald-400" /> },
+      { name: "F5 LTM", icon: <Network className="w-3 h-3 text-red-500" /> },
+      { name: "Cloudflare", icon: <Cloud className="w-3 h-3 text-orange-400" /> },
+      { name: "VPN", icon: <Lock className="w-3 h-3 text-neutral-400" /> }
+    ]
   },
   {
     title: "Storage Solutions",
-    description: "Dell EMC SAN/NAS (VNX, XtremIO, PowerMax, Unity, DataDomain), Brocade FC Switches.",
+    descriptionText: "High-performance SAN/NAS architecture for mission-critical enterprise data.",
     gradient: "from-slate-500/20 to-neutral-500/20",
     headerIcon: <LayoutDashboard className="h-12 w-12 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />,
+    tools: [
+      { name: "EMC SAN", icon: <Database className="w-3 h-3 text-blue-400" /> },
+      { name: "Brocade", icon: <Network className="w-3 h-3 text-neutral-300" /> },
+      { name: "Unity", icon: <Database className="w-3 h-3 text-cyan-300" /> }
+    ]
   },
   {
     title: "Monitoring & Observability",
-    description: "Dynatrace, CloudWatch, Nagios, Cacti, OpenNMS, Xymon.",
+    descriptionText: "Centralized monitoring and alerting across complex hybrid environments.",
     gradient: "from-yellow-500/20 to-orange-500/20",
     headerIcon: <Activity className="h-12 w-12 text-yellow-400 drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]" />,
+    tools: [
+      { name: "Dynatrace", icon: <Activity className="w-3 h-3 text-green-400" /> },
+      { name: "CloudWatch", icon: <Monitor className="w-3 h-3 text-orange-300" /> },
+      { name: "Nagios", icon: <Activity className="w-3 h-3 text-red-400" /> }
+    ]
   },
   {
     title: "Enterprise Systems",
-    description: "Active Directory, DNS, DHCP, Zimbra, Office365, Oracle SunRay, X2GO.",
+    descriptionText: "Core infrastructure services and enterprise-grade collaboration platforms.",
     gradient: "from-indigo-500/20 to-blue-500/20",
     headerIcon: <Network className="h-12 w-12 text-indigo-400 drop-shadow-[0_0_15px_rgba(129,140,248,0.5)]" />,
+    tools: [
+      { name: "AD/DNS", icon: <Server className="w-3 h-3 text-blue-400" /> },
+      { name: "Office365", icon: <Mail className="w-3 h-3 text-red-400" /> },
+      { name: "Zimbra", icon: <Mail className="w-3 h-3 text-neutral-300" /> }
+    ]
   },
 ];
+
+// Re-importing Box since I used it but forgot to import
+import { Box, Mail } from "lucide-react";

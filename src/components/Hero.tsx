@@ -17,9 +17,6 @@ export function Hero() {
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-2xl text-center mx-auto">
           Results-driven Systems Architect with over a decade of experience designing and scaling highly available hybrid cloud infrastructures. Specialized expertise in <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Google Cloud Platform (GCP)</a>—leveraging its global VPC networks, Anthos, and advanced analytics to build resilient, cost-effective, and globally scalable systems.
         </p>
-        <p className="mt-4 text-xs text-neutral-500 max-w-xl text-center mx-auto italic">
-          GCP's global VPC allows multi-region subnetworks without traversing the public internet, reducing latency. Coupled with Google's dedicated optical network, it provides unparalleled performance and security for hybrid environments.
-        </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-neutral-400 font-mono">
           <a href="mailto:waqarazeem_kpsi@hotmail.com" className="flex items-center gap-1 border border-neutral-800 px-3 py-1 rounded-full hover:border-blue-500 hover:text-blue-400 transition-colors">Email</a>
           <a href="https://www.linkedin.com/in/wazeem-sysadmin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-800 px-3 py-1 rounded-full hover:border-blue-500 hover:text-blue-400 transition-colors">LinkedIn</a>

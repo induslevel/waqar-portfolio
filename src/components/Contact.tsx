@@ -22,10 +22,10 @@ export function Contact() {
           </div>
         </div>
 
-        <div className="bg-neutral-900/50 p-8 rounded-2xl border border-neutral-800">
+        <div className="bg-neutral-900/50 p-8 rounded-2xl border border-neutral-800 w-full">
           <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
             <input type="hidden" name="access_key" value="eb2123c6-6282-42cd-ad82-e3f2a58a77ec" />
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input 
                 type="text" 
                 name="name" 

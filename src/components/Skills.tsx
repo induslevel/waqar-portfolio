@@ -19,7 +19,7 @@ import {
 
 export function Skills() {
   return (
-    <section className="py-20 bg-white dark:bg-black">
+    <section id="arsenal" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white mb-12 text-center">Technical Arsenal</h2>
         <BentoGrid className="max-w-4xl mx-auto">

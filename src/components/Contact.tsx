@@ -1,5 +1,4 @@
-import React from "react";
-import { MessageCircle, Mail, MapPin, Send } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Send, Github, Linkedin, Globe, Camera } from "lucide-react";
 
 export function Contact() {
   return (
@@ -8,17 +7,29 @@ export function Contact() {
         <div>
           <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
           <p className="text-neutral-600 dark:text-neutral-400 mb-8 max-w-md">
-            Interested in collaborating or have a project in mind? Feel free to reach out via the form or WhatsApp.
+            Interested in collaborating or have a project in mind? Feel free to reach out via the form or through any of the platforms below.
           </p>
-          <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-blue-500" />
-              <span>waqarazeem_kpsi@hotmail.com</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <MapPin className="w-5 h-5 text-blue-500" />
-              <span>Lahore, Pakistan</span>
-            </div>
+          <div className="flex flex-col gap-3 max-w-md">
+            <a href="mailto:hello@induslevel.com" className="flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-blue-500 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all group">
+              <Mail className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
+              <span className="font-medium">hello@induslevel.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/wazeem-sysadmin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-blue-500 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all group">
+              <Linkedin className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
+              <span className="font-medium">LinkedIn Professional Profile</span>
+            </a>
+            <a href="https://github.com/induslevel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-blue-500 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all group">
+              <Github className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
+              <span className="font-medium">GitHub Code Repository</span>
+            </a>
+            <a href="https://induslevel.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-blue-500 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all group">
+              <Globe className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
+              <span className="font-medium">Personal Blog</span>
+            </a>
+            <a href="https://focus.hadiqal.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-3 rounded-full border border-neutral-200 dark:border-neutral-800 hover:border-blue-500 hover:bg-blue-50/50 dark:hover:bg-blue-900/20 transition-all group">
+              <Camera className="w-5 h-5 text-blue-500 group-hover:scale-110 transition-transform" />
+              <span className="font-medium">Photography Portfolio</span>
+            </a>
           </div>
         </div>
 

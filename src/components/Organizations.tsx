@@ -3,7 +3,7 @@ import { Users } from "lucide-react";
 
 export function Organizations() {
   return (
-    <section className="py-20 bg-white dark:bg-black">
+    <section id="organizations" className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center gap-3 mb-12 justify-center">
           <Users className="w-8 h-8 text-blue-500" />

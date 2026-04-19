@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -27,6 +28,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <ThemeToggle />
+          <Navbar />
           {children}
         </ThemeProvider>
         <Script src="https://web3forms.com/client/script.js" strategy="afterInteractive" />

@@ -2,36 +2,39 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { MoveRight } from "lucide-react";
+import Image from "next/image";
 
 export function Hero() {
   return (
-    <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-white dark:bg-black/[0.96] antialiased bg-grid-black/[0.02] dark:bg-grid-white/[0.02] relative overflow-hidden">
+    <div id="home" className="h-[50rem] w-full rounded-md flex md:items-center md:justify-center bg-white dark:bg-black/[0.96] antialiased bg-grid-black/[0.02] dark:bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgba(59, 130, 246, 0.2)"
       />
-      <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
-        <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-500 dark:from-neutral-50 dark:to-neutral-400 bg-opacity-50">
-          Waqar Azeem <br /> Systems Architect.
+      
+      {/* Background Image Integration */}
+      <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-80 dark:opacity-90 pointer-events-none transition-opacity duration-500">
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent dark:from-black dark:via-black/10 dark:to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[90%] to-white dark:to-black z-10" />
+        <Image 
+          src="/profile.jpg" 
+          alt="Waqar Azeem"
+          fill
+          className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000"
+          priority
+        />
+      </div>
+
+      <div className="p-4 max-w-7xl mx-auto relative z-20 w-full pt-20 md:pt-0 flex flex-col items-center md:items-start md:pl-20">
+        <h1 className="text-4xl md:text-8xl font-bold text-center md:text-left bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-500 dark:from-neutral-50 dark:to-neutral-400">
+          Waqar Azeem
         </h1>
-        <p className="mt-4 font-normal text-base text-neutral-700 dark:text-neutral-300 max-w-2xl text-center mx-auto">
-          Results-driven Systems Architect with over a decade of experience designing and scaling highly available hybrid cloud infrastructures. Specialized expertise in <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">Google Cloud Platform (GCP)</a>—leveraging its global VPC networks, Anthos, and advanced analytics to build resilient, cost-effective, and globally scalable systems.
+        <h2 className="text-2xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 mt-2 mb-6 text-center md:text-left">
+          Systems Architect
+        </h2>
+        <p className="mt-4 font-normal text-base text-neutral-700 dark:text-neutral-300 max-w-xl text-center md:text-left">
+          Results-driven Systems Architect with over a decade of experience designing and scaling highly available hybrid cloud infrastructures.
         </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3 text-sm text-neutral-600 dark:text-neutral-400 font-mono">
-          <a href="mailto:waqarazeem_kpsi@hotmail.com" className="flex items-center gap-1 border border-neutral-200 dark:border-neutral-800 px-2.5 py-1 rounded-full hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Email</a>
-          <a href="https://www.linkedin.com/in/wazeem-sysadmin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-200 dark:border-neutral-800 px-2.5 py-1 rounded-full hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">LinkedIn</a>
-          <a href="https://github.com/induslevel" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-200 dark:border-neutral-800 px-2.5 py-1 rounded-full hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">GitHub</a>
-          <a href="https://induslevel.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-200 dark:border-neutral-800 px-2.5 py-1 rounded-full hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Blog</a>
-          <a href="https://focus.hadiqal.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-200 dark:border-neutral-800 px-2.5 py-1 rounded-full hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Photography</a>
-        </div>
-        <div className="mt-8 flex justify-center gap-4">
-          <a href="#projects" className="px-8 py-3 rounded-full bg-black dark:bg-white text-white dark:text-black font-bold hover:bg-neutral-800 dark:hover:bg-neutral-200 transition-colors flex items-center gap-2">
-            View Projects <MoveRight className="w-4 h-4" />
-          </a>
-          <a href="#contact" className="px-8 py-3 rounded-full border border-black dark:border-white text-black dark:text-white font-bold hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
-            Contact Me
-          </a>
-        </div>
       </div>
     </div>
   );

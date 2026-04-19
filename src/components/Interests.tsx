@@ -3,7 +3,7 @@ import { Camera, BookOpen } from "lucide-react";
 
 export function Interests() {
   return (
-    <section className="py-20 bg-neutral-50 dark:bg-neutral-900/30">
+    <section id="interests" className="py-20 bg-neutral-50 dark:bg-neutral-900/30">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white mb-16 text-center">Creative Portfolios</h2>
         

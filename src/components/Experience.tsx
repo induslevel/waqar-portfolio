@@ -12,7 +12,9 @@ export function Experience() {
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-neutral-100">{exp.role}</h3>
-                  <p className="text-blue-400 font-medium">{exp.company}</p>
+                  <a href={exp.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 font-medium hover:underline">
+                    {exp.company}
+                  </a>
                 </div>
                 <p className="text-neutral-500 text-sm mt-2 md:mt-0 font-mono">{exp.period}</p>
               </div>
@@ -35,6 +37,7 @@ export function Experience() {
 const experiences = [
   {
     company: "i2c incorporated",
+    link: "https://www.i2cinc.com/",
     role: "Systems Architect",
     period: "August 2012 – January 2023",
     description: [
@@ -49,6 +52,7 @@ const experiences = [
   },
   {
     company: "University of Engineering and Technology (UET), Lahore",
+    link: "https://www.uet.edu.pk/",
     role: "System Administrator",
     period: "October 2009 – July 2012",
     description: [

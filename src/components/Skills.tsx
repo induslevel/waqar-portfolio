@@ -38,7 +38,13 @@ export function Skills() {
 const items = [
   {
     title: "Cloud Platforms",
-    description: "Google Cloud Platform (GCP), Amazon Web Services (AWS), Microsoft Azure.",
+    description: (
+      <>
+        <a href="https://cloud.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Google Cloud Platform (GCP)</a>,{" "}
+        <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Amazon Web Services (AWS)</a>,{" "}
+        <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Microsoft Azure</a>.
+      </>
+    ),
     gradient: "from-blue-500/20 to-cyan-500/20",
     headerIcon: <Cloud className="h-12 w-12 text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" />,
   },

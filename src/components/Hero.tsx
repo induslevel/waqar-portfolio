@@ -13,7 +13,7 @@ export function Hero() {
       />
       
       {/* Background Image Integration */}
-      <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-80 dark:opacity-90 pointer-events-none transition-opacity duration-500">
+      <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-[0.35] md:opacity-80 dark:opacity-[0.35] md:dark:opacity-90 pointer-events-none transition-opacity duration-500">
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent md:via-white/10 dark:from-black dark:via-black/80 md:dark:via-black/10 dark:to-transparent z-10" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[45%] md:via-[90%] to-white dark:to-black z-10" />
         <Image 

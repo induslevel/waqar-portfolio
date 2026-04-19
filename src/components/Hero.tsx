@@ -25,13 +25,13 @@ export function Hero() {
         />
       </div>
 
-      <div className="px-6 pt-48 pb-8 md:p-4 max-w-7xl mx-auto relative z-20 w-full flex-1 flex flex-col justify-between md:justify-center items-start md:pl-20 md:py-0">
+      <div className="px-6 pt-24 pb-8 md:p-4 max-w-7xl mx-auto relative z-20 w-full flex-1 flex flex-col justify-between md:justify-center items-start md:pl-20 md:py-0">
         {/* Top Text on Mobile */}
         <div className="w-full">
           <h1 className="text-6xl md:text-8xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-500 dark:from-neutral-50 dark:to-neutral-400 leading-tight">
             Waqar<br className="md:hidden" /> Azeem
           </h1>
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 mt-2 text-left leading-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 mt-20 md:mt-2 text-left leading-tight">
             Systems<br className="md:hidden" /> Architect
           </h2>
         </div>

@@ -19,9 +19,9 @@ import {
 
 export function Skills() {
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-white dark:bg-black">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-12 text-center">Technical Arsenal</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-black dark:text-white mb-12 text-center">Technical Arsenal</h2>
         <BentoGrid className="max-w-4xl mx-auto">
           {items.map((item, i) => (
             <BentoGridItem
@@ -29,12 +29,12 @@ export function Skills() {
               title={item.title}
               description={
                 <div className="space-y-4 mt-2">
-                  <p className="text-neutral-400 text-xs leading-relaxed">{item.descriptionText}</p>
-                  <div className="flex flex-wrap gap-2">
+                  <p className="text-neutral-600 dark:text-neutral-400 text-xs leading-relaxed">{item.descriptionText}</p>
+                  <div className="flex flex-wrap gap-1">
                     {item.tools.map((tool, idx) => (
-                      <div key={idx} className="flex items-center gap-1.5 px-2 py-1 bg-white/5 border border-white/10 rounded-md">
+                      <div key={idx} className="flex items-center gap-1 px-1 py-1 bg-neutral-100 dark:bg-white/5 border border-neutral-200 dark:border-white/10 rounded-md">
                         {tool.icon}
-                        <span className="text-[10px] text-neutral-300 whitespace-nowrap">{tool.name}</span>
+                        <span className="text-[9px] text-neutral-700 dark:text-neutral-300 whitespace-nowrap">{tool.name}</span>
                       </div>
                     ))}
                   </div>
@@ -61,9 +61,9 @@ const items = [
     gradient: "from-blue-500/20 to-cyan-500/20",
     headerIcon: <Cloud className="h-12 w-12 text-cyan-400 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]" />,
     tools: [
-      { name: "GCP", icon: <Globe className="w-3 h-3 text-blue-400" /> },
-      { name: "AWS", icon: <Cloud className="w-3 h-3 text-orange-400" /> },
-      { name: "Azure", icon: <Server className="w-3 h-3 text-blue-500" /> }
+      { name: "GCP", icon: <Globe className="w-2.5 h-2.5 text-blue-400" /> },
+      { name: "AWS", icon: <Cloud className="w-2.5 h-2.5 text-orange-400" /> },
+      { name: "Azure", icon: <Server className="w-2.5 h-2.5 text-blue-500" /> }
     ]
   },
   {
@@ -72,10 +72,10 @@ const items = [
     gradient: "from-purple-500/20 to-pink-500/20",
     headerIcon: <Cpu className="h-12 w-12 text-pink-400 drop-shadow-[0_0_15px_rgba(244,114,182,0.5)]" />,
     tools: [
-      { name: "Kubernetes", icon: <Settings className="w-3 h-3 text-blue-400" /> },
-      { name: "Docker", icon: <Box className="w-3 h-3 text-cyan-400" /> },
-      { name: "VMware", icon: <Monitor className="w-3 h-3 text-blue-300" /> },
-      { name: "Citrix", icon: <Server className="w-3 h-3 text-neutral-400" /> }
+      { name: "K8s", icon: <Settings className="w-2.5 h-2.5 text-blue-400" /> },
+      { name: "Docker", icon: <Box className="w-2.5 h-2.5 text-cyan-400" /> },
+      { name: "VMware", icon: <Monitor className="w-2.5 h-2.5 text-blue-300" /> },
+      { name: "Citrix", icon: <Server className="w-2.5 h-2.5 text-neutral-400" /> }
     ]
   },
   {
@@ -84,10 +84,10 @@ const items = [
     gradient: "from-emerald-500/20 to-teal-500/20",
     headerIcon: <Terminal className="h-12 w-12 text-emerald-400 drop-shadow-[0_0_15px_rgba(52,211,153,0.5)]" />,
     tools: [
-      { name: "Ansible", icon: <Workflow className="w-3 h-3 text-red-400" /> },
-      { name: "Jenkins", icon: <Settings className="w-3 h-3 text-neutral-300" /> },
-      { name: "Puppet", icon: <Settings className="w-3 h-3 text-yellow-400" /> },
-      { name: "Git", icon: <Workflow className="w-3 h-3 text-orange-600" /> }
+      { name: "Ansible", icon: <Workflow className="w-2.5 h-2.5 text-red-400" /> },
+      { name: "Jenkins", icon: <Settings className="w-2.5 h-2.5 text-neutral-300" /> },
+      { name: "Puppet", icon: <Settings className="w-2.5 h-2.5 text-yellow-400" /> },
+      { name: "Git", icon: <Workflow className="w-2.5 h-2.5 text-orange-600" /> }
     ]
   },
   {
@@ -96,10 +96,10 @@ const items = [
     gradient: "from-red-500/20 to-orange-500/20",
     headerIcon: <ShieldCheck className="h-12 w-12 text-red-400 drop-shadow-[0_0_15px_rgba(248,113,113,0.5)]" />,
     tools: [
-      { name: "PfSense", icon: <ShieldCheck className="w-3 h-3 text-emerald-400" /> },
-      { name: "F5 LTM", icon: <Network className="w-3 h-3 text-red-500" /> },
-      { name: "Cloudflare", icon: <Cloud className="w-3 h-3 text-orange-400" /> },
-      { name: "VPN", icon: <Lock className="w-3 h-3 text-neutral-400" /> }
+      { name: "PfSense", icon: <ShieldCheck className="w-2.5 h-2.5 text-emerald-400" /> },
+      { name: "F5 LTM", icon: <Network className="w-2.5 h-2.5 text-red-500" /> },
+      { name: "Cloudflare", icon: <Cloud className="w-2.5 h-2.5 text-orange-400" /> },
+      { name: "VPN", icon: <Lock className="w-2.5 h-2.5 text-neutral-400" /> }
     ]
   },
   {
@@ -108,9 +108,9 @@ const items = [
     gradient: "from-slate-500/20 to-neutral-500/20",
     headerIcon: <LayoutDashboard className="h-12 w-12 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]" />,
     tools: [
-      { name: "EMC SAN", icon: <Database className="w-3 h-3 text-blue-400" /> },
-      { name: "Brocade", icon: <Network className="w-3 h-3 text-neutral-300" /> },
-      { name: "Unity", icon: <Database className="w-3 h-3 text-cyan-300" /> }
+      { name: "EMC SAN", icon: <Database className="w-2.5 h-2.5 text-blue-400" /> },
+      { name: "Brocade", icon: <Network className="w-2.5 h-2.5 text-neutral-300" /> },
+      { name: "Unity", icon: <Database className="w-2.5 h-2.5 text-cyan-300" /> }
     ]
   },
   {
@@ -119,9 +119,9 @@ const items = [
     gradient: "from-yellow-500/20 to-orange-500/20",
     headerIcon: <Activity className="h-12 w-12 text-yellow-400 drop-shadow-[0_0_15px_rgba(251,191,36,0.5)]" />,
     tools: [
-      { name: "Dynatrace", icon: <Activity className="w-3 h-3 text-green-400" /> },
-      { name: "CloudWatch", icon: <Monitor className="w-3 h-3 text-orange-300" /> },
-      { name: "Nagios", icon: <Activity className="w-3 h-3 text-red-400" /> }
+      { name: "Dynatrace", icon: <Activity className="w-2.5 h-2.5 text-green-400" /> },
+      { name: "CloudWatch", icon: <Monitor className="w-2.5 h-2.5 text-orange-300" /> },
+      { name: "Nagios", icon: <Activity className="w-2.5 h-2.5 text-red-400" /> }
     ]
   },
   {
@@ -130,9 +130,9 @@ const items = [
     gradient: "from-indigo-500/20 to-blue-500/20",
     headerIcon: <Network className="h-12 w-12 text-indigo-400 drop-shadow-[0_0_15px_rgba(129,140,248,0.5)]" />,
     tools: [
-      { name: "AD/DNS", icon: <Server className="w-3 h-3 text-blue-400" /> },
-      { name: "Office365", icon: <Mail className="w-3 h-3 text-red-400" /> },
-      { name: "Zimbra", icon: <Mail className="w-3 h-3 text-neutral-300" /> }
+      { name: "AD/DNS", icon: <Server className="w-2.5 h-2.5 text-blue-400" /> },
+      { name: "Office365", icon: <Mail className="w-2.5 h-2.5 text-red-400" /> },
+      { name: "Zimbra", icon: <Mail className="w-2.5 h-2.5 text-neutral-300" /> }
     ]
   },
 ];

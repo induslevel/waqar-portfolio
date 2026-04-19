@@ -3,26 +3,26 @@ import { MessageCircle, Mail, MapPin, Send } from "lucide-react";
 
 export function Contact() {
   return (
-    <footer id="contact" className="py-20 bg-black border-t border-neutral-900">
-      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+    <footer id="contact" className="py-20 bg-neutral-50 dark:bg-black border-t border-neutral-200 dark:border-neutral-900">
+      <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 text-black dark:text-white">
         <div>
-          <h2 className="text-3xl font-bold text-white mb-6">Get in Touch</h2>
-          <p className="text-neutral-400 mb-8 max-w-md">
+          <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
+          <p className="text-neutral-600 dark:text-neutral-400 mb-8 max-w-md">
             Interested in collaborating or have a project in mind? Feel free to reach out via the form or WhatsApp.
           </p>
           <div className="space-y-4">
-            <div className="flex items-center gap-3 text-neutral-300">
+            <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-blue-500" />
               <span>waqarazeem_kpsi@hotmail.com</span>
             </div>
-            <div className="flex items-center gap-3 text-neutral-300">
+            <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-blue-500" />
               <span>Lahore, Pakistan</span>
             </div>
           </div>
         </div>
 
-        <div className="bg-neutral-900/50 p-8 rounded-2xl border border-neutral-800 w-full">
+        <div className="bg-white dark:bg-neutral-900/50 p-8 rounded-2xl border border-neutral-200 dark:border-neutral-800 w-full shadow-sm">
           <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
             <input type="hidden" name="access_key" value="eb2123c6-6282-42cd-ad82-e3f2a58a77ec" />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -31,14 +31,14 @@ export function Contact() {
                 name="name" 
                 placeholder="Name" 
                 required 
-                className="bg-black border border-neutral-800 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500"
+                className="bg-neutral-50 dark:bg-black border border-neutral-200 dark:border-neutral-800 rounded-lg p-3 focus:outline-none focus:border-blue-500"
               />
               <input 
                 type="email" 
                 name="email" 
                 placeholder="Email" 
                 required 
-                className="bg-black border border-neutral-800 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500"
+                className="bg-neutral-50 dark:bg-black border border-neutral-200 dark:border-neutral-800 rounded-lg p-3 focus:outline-none focus:border-blue-500"
               />
             </div>
             <textarea 
@@ -46,7 +46,7 @@ export function Contact() {
               placeholder="Your Message" 
               rows={4} 
               required
-              className="w-full bg-black border border-neutral-800 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500"
+              className="w-full bg-neutral-50 dark:bg-black border border-neutral-200 dark:border-neutral-800 rounded-lg p-3 focus:outline-none focus:border-blue-500"
             ></textarea>
             <div className="h-captcha" data-captcha="true"></div>
             <button 
@@ -59,7 +59,7 @@ export function Contact() {
         </div>
       </div>
       
-      <div className="mt-20 pt-8 border-t border-neutral-900 text-center text-neutral-500 text-sm">
+      <div className="mt-20 pt-8 border-t border-neutral-200 dark:border-neutral-900 text-center text-neutral-500 text-sm">
         © 2026 Waqar Azeem. Built with Next.js & Aceternity UI.
       </div>
 

@@ -60,7 +60,7 @@ export function Contact() {
       </div>
       
       <div className="mt-20 pt-8 border-t border-neutral-900 text-center text-neutral-500 text-sm">
-        © {new Date().getFullYear()} Waqar Azeem. Built with Next.js & Aceternity UI.
+        © 2026 Waqar Azeem. Built with Next.js & Aceternity UI.
       </div>
 
       {/* Floating WhatsApp Button */}

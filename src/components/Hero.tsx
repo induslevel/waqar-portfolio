@@ -15,8 +15,13 @@ export function Hero() {
           Waqar Azeem <br /> Systems Architect.
         </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-          Hybrid cloud architect specializing in Linux, Virtualization, and Public Cloud infrastructure (AWS, Azure, GCP). Designing highly available mission-critical systems with a focus on security, compliance, and CI/CD automation.
+          Results-driven Systems Architect with over a decade of experience designing and scaling highly available hybrid cloud infrastructures. Specialized expertise in <strong>Google Cloud Platform (GCP)</strong>—leveraging its global VPC networks, Anthos, and advanced analytics to build resilient, cost-effective, and globally scalable systems.
         </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-neutral-400 font-mono">
+          <span className="flex items-center gap-1 border border-neutral-800 px-3 py-1 rounded-full">Email: waqarazeem_kpsi@hotmail.com</span>
+          <a href="https://linkedin.com/in/wazeem-sysadmin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-800 px-3 py-1 rounded-full hover:border-blue-500 hover:text-blue-400 transition-colors">LinkedIn: wazeem-sysadmin</a>
+          <a href="https://induslevel.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 border border-neutral-800 px-3 py-1 rounded-full hover:border-blue-500 hover:text-blue-400 transition-colors">Website: induslevel.com</a>
+        </div>
         <div className="mt-8 flex justify-center gap-4">
           <button className="px-8 py-3 rounded-full bg-white text-black font-bold hover:bg-neutral-200 transition-colors flex items-center gap-2">
             View Projects <MoveRight className="w-4 h-4" />

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <div id="home" className="h-[50rem] min-h-[100dvh] md:min-h-[50rem] w-full rounded-md flex flex-col justify-end pb-12 md:pb-0 md:flex-row md:items-center md:justify-center bg-white dark:bg-black/[0.96] antialiased bg-grid-black/[0.02] dark:bg-grid-white/[0.02] relative overflow-hidden">
+    <div id="home" className="min-h-[100dvh] md:h-[50rem] md:min-h-[50rem] w-full rounded-md flex flex-col justify-end pb-6 pt-20 md:pb-0 md:pt-0 md:flex-row md:items-center md:justify-center bg-white dark:bg-black/[0.96] antialiased bg-grid-black/[0.02] dark:bg-grid-white/[0.02] relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgba(59, 130, 246, 0.2)"
@@ -15,12 +15,12 @@ export function Hero() {
       {/* Background Image Integration */}
       <div className="absolute right-0 top-0 h-full w-full md:w-1/2 opacity-80 dark:opacity-90 pointer-events-none transition-opacity duration-500">
         <div className="absolute inset-0 bg-gradient-to-r from-white via-white/50 to-transparent md:via-white/10 dark:from-black dark:via-black/50 md:dark:via-black/10 dark:to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[50%] md:via-[90%] to-white dark:to-black z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-[45%] md:via-[90%] to-white dark:to-black z-10" />
         <Image 
           src="/profile.jpg" 
           alt="Waqar Azeem"
           fill
-          className="object-cover object-top md:object-center grayscale hover:grayscale-0 transition-all duration-1000"
+          className="object-cover object-[center_0%] md:object-center grayscale hover:grayscale-0 transition-all duration-1000"
           priority
         />
       </div>

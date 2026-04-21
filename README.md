@@ -8,7 +8,7 @@ A modern, responsive, dark-mode portfolio site built with **Next.js 14**, **Type
 
 ## ✨ Live Demo
 
-**[waqar.induslevel.com](https://waqar.induslevel.com)** *(replace with your own URL)*
+**[resume.induslevel.com](https://resume.induslevel.com)** *(replace with your own URL)*
 
 ---
 

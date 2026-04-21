@@ -29,10 +29,10 @@ export function Hero() {
         {/* Top Text on Mobile */}
         <div className="w-full">
           <h1 className="text-6xl md:text-8xl font-bold text-left bg-clip-text text-transparent bg-gradient-to-b from-black to-neutral-500 dark:from-neutral-50 dark:to-neutral-400 leading-tight">
-            Waqar<br className="md:hidden" /> Azeem
+            Waqar<br /> Azeem
           </h1>
           <h2 className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-500 mt-20 md:mt-2 text-left leading-tight">
-            Systems<br className="md:hidden" /> Architect
+            Systems<br /> Architect
           </h2>
         </div>
 
